@@ -1,18 +1,21 @@
 # GPIO
 
-- [Overview](#overview)
-- [Example 1](#example1)
-- [Example 2](#example2)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي 1](#example1)
+- [مثال تطبيقي 2](#example2)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-The library has its own ```GPIO``` wrapper(class) to use, which is much more faster than the Arduino library. [See the comparison](https://github.com/saleem-hadad/zino/blob/master/examples/CompareFrequencies/CompareFrequencies.cpp).
+ تمتلك المكتبة كلاس `GPIO` للتعامل مع مدخلات ومخرجات متحكم `Atmega32` والذي يتفوق في سرعته على التوابع  الموجودة ضمن مكتبة الأردوينو مثل `digitalWrite`
+
+
+> {tip} يمكنك الإطلاع على نتائج المقارنة بين كلاس `GPIO ` والتوابع الموجودة ضمن مكتبة الأردوينو [من هنا](https://github.com/saleem-hadad/zino/blob/master/examples/CompareFrequencies/CompareFrequencies.cpp).
 
 <a name="example1"></a>
-## Example 1
+## مثال تطبيقي 1
 
-Blinking LED on and off without delay.
+تشغيل وإطفاء `LED` بدون توقف زمني.
 
     #include <GPIO.h>
     #include <Pin.h>
@@ -35,9 +38,10 @@ Blinking LED on and off without delay.
     } 
 
 <a name="example2"></a>
-## Example 2
+## مثال تطبيقي 2
 
-Reading analog input from PortC, pin number 4 and print the result to the serial.
+قراءة القيم المتغيرة من مدخل 4 على البورت C ومن ثم طباعة النتيجة إلى الـ Serial
+
 
     #include <Arduino.h>
     #include <GPIO.h>
