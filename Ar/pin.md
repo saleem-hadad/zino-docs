@@ -1,23 +1,25 @@
-# Pin
+# Pin (المخرجات)
 
-- [Overview](#overview)
-- [Example](#example)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-The library introduces this new concept of shaping the pin as an object which has a port address and pin number.
 
-The `Pin` class used in many different other classes to handle the process of assigning the pin either `Output`, `Input` or `InputWithPullUp` resister.
 
-> {tip}The reason for using Pin class instead of the pin number as Arduino library uses is first for educational purpose where the students can get a clue of the register concept and also to make the code very clean and organised. However, the library also supports the pin number method if you still like it 👍
+تقدم المكتبة مفهوم جديد للتعامل مع مخرجات ومدخلات المتحكم اضافة إلى الطريقة المستخدمة في مكتبة الأردوينو حيث يتم اعتبار كل مدخل أو مخرج كعنصر يتم ترميزه برقم واسم البورت الخاص به, فمثلاً المخرج رقم ٨ في لوحة الاردوينو يمكن ترميزه كمخرج رقمه 0 على البورت ب
+
+>   {success} السبب الرئيس في تقديم هذا المفهوم الجديد لتعريف الطلاب بمفهوم الريجسترات. لكن ان كنت تفضل استخدام الأسلوب القديم في مكتبة الأردوينو فيمكنك ذلك 😇
 
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
+
+
 
     #include <Pin.h>
-    
+
     /* 
     portName: PortB, pinNumber: 0 
     Same as digital pin 8
