@@ -1,4 +1,4 @@
-# Pin
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/Pin.png" alt="Zino Pin class"/> Pin
 
 - [نظرة عامة](#overview)
 - [مثال تطبيقي](#example)

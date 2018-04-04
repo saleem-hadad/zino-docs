@@ -1,4 +1,4 @@
-# Ultrasonic
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/Ultrasonic.png" alt="Zino Ultrasonic class"/> Ultrasonic
 
 - [Overview](#overview)
     - [Theoretical information](#theoretical-information)

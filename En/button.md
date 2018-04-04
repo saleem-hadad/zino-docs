@@ -1,4 +1,4 @@
-# Button
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/button.png" alt="Zino Button class"/> Button
 
 - [Overview](#overview)
 - [Example](#example)

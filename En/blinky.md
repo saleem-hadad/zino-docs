@@ -1,4 +1,4 @@
-# Blinky
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/Blinky.png" alt="Zino Blinky class"/> Blinky
 
 - [Overview](#overview)
 - [Example](#example)

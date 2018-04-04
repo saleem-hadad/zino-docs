@@ -1,4 +1,4 @@
-# Delay
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/Delay.png" alt="Zino Delay class"/> Delay
 
 - [Overview](#overview)
 - [Example](#example)

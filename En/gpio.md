@@ -1,4 +1,4 @@
-# GPIO
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/GPIO.png" alt="Zino GPIO class"/> GPIO
 
 - [Overview](#overview)
 - [Example 1](#example1)

@@ -1,4 +1,4 @@
-# DC Motor
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/DCMotor.png" alt="Zino DCMotor class"/> DC Motor
 
 - [Overview](#overview)
 - [Example](#example)

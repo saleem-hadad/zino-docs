@@ -1,4 +1,4 @@
-# Ultrasonic
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/PowerManager.png" alt="Zino PowerManager class"/> Power Manager
 
 - [Overview](#overview)
     - [Sleep](#sleep)

@@ -1,4 +1,4 @@
-# GPIO
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/GPIO.png" alt="Zino GPIO class"/> GPIO
 
 - [نظرة عامة](#overview)
 - [مثال تطبيقي 1](#example1)

@@ -1,4 +1,4 @@
-# LED
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/LED.png" alt="Zino LED class"/> LED
 
 - [Overview](#overview)
 - [Example](#example)

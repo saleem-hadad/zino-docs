@@ -1,4 +1,4 @@
-# Analog Comparator
+# <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/AnalogComparator.png" alt="Zino AnalogComparator class"/> Analog Comparator
 
 - [Overview](#overview)
 - [Example](#example)
