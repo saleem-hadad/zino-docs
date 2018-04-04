@@ -1,15 +1,15 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/LED.png" alt="Zino LED class"/> LED
 
-- [Overview](#overview)
-- [Example](#example)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-LEDs are the fun things to play with 🤓, for that, the ```LED``` class handles some cool features that you might need to control the LEDs very easily.
+التعامل مع الديود الضوئي `LED` أمر مسل, كما في نفس الوقت مفيد لاكتشاف الأخطاء البرمجية وتتبعها, لذلك تقدم المكتبة طريقة لتشغيل وإطفاء أو حتى تغيير حالة الـ LED بشكل بسيط
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
 
     #include <Arduino.h>
     #include <Pin.h>
