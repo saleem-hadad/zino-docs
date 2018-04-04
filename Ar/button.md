@@ -1,19 +1,20 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/button.png" alt="Zino Button class"/> Button
 
-- [Overview](#overview)
-- [Example](#example)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-The library solves some of the common issue when working with push buttons, like edge detection and bouncing problem.
+حلّت المكتبة العديد من المشاكل المتعلقة باستخدام الأزرار وسهلت استخدامها, على سبيل المثال: تنبيه المطور بتغير حالة الزر من `low` إلى `high` وأيضاً حلت مشكلة الإرتداد الشهيرة
 
-The class ```Button``` provides very easy way to handle physical actions like button pressed event.
+> {success} يقدم كلاس `Button` سهولة في التعامل مع العوامل الفيزيائية للأزرار على شكل تنبيهات برمجية, مثال: تغير حالة الزر من 0  إلى 1
+
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
 
-Print `Button has been pressed 🤠` to the serial when the button pressed.
+طباعة جملة `😎 تم ضغط الزر` إلى مدخل الـ `Serial`
 
     #include <Arduino.h>
     #include <Button.h>
@@ -23,7 +24,7 @@ Print `Button has been pressed 🤠` to the serial when the button pressed.
     
     void buttonPressed()
     {
-        Serial.println("Button has been pressed 🤠");
+        Serial.println("😎 تم ضغط الزر");
     }
     
     void setup()
