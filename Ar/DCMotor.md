@@ -1,20 +1,19 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/DCMotor.png" alt="Zino DCMotor class"/> DC Motor
 
-- [Overview](#overview)
-- [Example](#example)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-> {note}This class still in development
+> {note}لايزال هذا الكلاس في طور التطوير
 
-Controlling DC Motors needs a lot of hardware and software configurations to be handled. 
-However, ```DCMotor``` class provides a convenient way of controlling the DC motors by
-generating a software PWM signal on any digital pin and not only the timers ones 
-(with [~] label), which means you can control the dc motor by any digital pin 😎
+التحكم في المحركات عادة مايتطلب الكثير من التجهيزات في كل من الهادوير والسوفتوير, لذلك تقدم المكتبة كلاس `DCMotor` لتسهيل التعامل مع المحركات والتحكم بها.
+
+الكلاس يقدم طريقة مختلفة عن طريقة مكتبة الأدروينو بحيث يمكنك تشغيل المحركات على أي مخرج من مخارج المتحكم على عكس الموجودة ضمن مكتبة الأردوينو والتي تسمح لك التحكم بالمحركات فقط عن طريق المخارج التي عُلمت بالعلامة ~
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
 
     #include <Arduino.h>
     #include <DCMotor.h>
