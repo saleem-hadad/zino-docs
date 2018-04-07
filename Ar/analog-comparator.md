@@ -1,21 +1,22 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/AnalogComparator.png" alt="Zino AnalogComparator class"/> Analog Comparator
 
-- [Overview](#overview)
-- [Example](#example)
+- [نظرة عامة](#overview)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-The Atmega328 chip has a built-in analog comparator. That is, it can give a high output when an incoming voltage passes a threshold.
+متحكم الـ Atmega328 أو مايعرف باسم الاردوينو يحتوي على مقارن للإشارات التماثلية.
+والذي يمكن استخدامه في مقارنة الإشارة التماثلية القادمة كمدخل للأردوينو مع مستوى رقمي معين يمكن تحديده.
 
-The incoming voltage is on the AIN0 (positive terminal) pin which is pin 12 on the actual chip, and D6 on the Arduino board. The reference voltage (negative terminal) pin is pin 13 on the chip, and D7 on the Arduino.
+الفولت القادم عبر المدخل AIN0 "المدخل الموجب" للمقارن هو المدخل رقم 6 على لوحة الأردوينو والمدخل رقم 7 يمثل المستوى المطلوب للمقارنة معه.
 
-This is faster than doing an ADC (analog to digital) comparison because it is comparing to a single voltage, not attempting to do a full conversion (which can take almost 104 uS).
+> {example} لكن ماهي فائدة هذه الطريقة عوضاً عن المداخل التماثلية؟
 
-> {tip}You can select the internal bandgab (1.1 v) as the positive terminal (D6) and use the navigate terminal as your input to compare. However, if you don't want to use the internal bandgab, you have to supply the voltage (0-5 v) reference on pin D6.
+يعتبر المقارن التماثلي المضمن بلوحة الأردوينو أسرع بكثير من استخدام المداخل التماثلية للمقارنة ADC والتي تستنزف الكثير من الطاقة مقارنة بالمقارن التماثلي, لكن تذكر أنه لايمكنك استخدام هذا المقارن لاكثر من شيء في آن واحد!
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
 
     #include <AnalogComparator.h>
     
@@ -33,7 +34,7 @@ This is faster than doing an ADC (analog to digital) comparison because it is co
     
     void setup()
     {
-        comparator.init(true, true); // enabled, bandgabSelected
+        comparator.init(true, true);              // enabled, bandgabSelected
         comparator.callback = comparatorCallback; // important
     }
     
