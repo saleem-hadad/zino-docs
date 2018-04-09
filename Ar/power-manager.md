@@ -1,17 +1,20 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/PowerManager.png" alt="Zino PowerManager class"/> Power Manager
 
-- [Overview](#overview)
-    - [Sleep](#sleep)
-    - [Deep Sleep](#deep-sleep)
-- [Example](#example)
+- [نظرة عامة](#overview)
+    - [النوم](#sleep)
+    - [النوم العميق](#deep-sleep)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## نظرة عامة
 
-The ```PowerManager``` class used to reduce the power consumption by the Arduino chip, *[please refer to this article to understand the Arduino power management before you use this class](https://playground.arduino.cc/Learning/ArduinoSleepCode)*. There are two static methods available:
+> {tip} يمكنك الاطلاع على المقالة التالية إن كنت تود فهم طريقة عمل الكلاس. [من هنا](https://playground.arduino.cc/Learning/ArduinoSleepCode)
+
+يوفر كلاس `PowerManager` طريقة مبسطة للتقليل من استهلاك متحكم الأردوينو للطاقة الكهربائية في حال عدم استخدام المصادر وذلك إما باستخدام النوم العادي أو النوم العميق.
+
 
 <a name="sleep"></a>
-> {example}Sleep
+> {example}النوم
 
 + Turning off ADC
 + Turning off Analog Comparator
@@ -19,7 +22,7 @@ The ```PowerManager``` class used to reduce the power consumption by the Arduino
 
 
 <a name="deep-sleep"></a>
-> {example}Deep Sleep
+> {example}النوم العميق
 
 + BOD disabled
 + BOD sleep enable
@@ -28,7 +31,7 @@ The ```PowerManager``` class used to reduce the power consumption by the Arduino
 + Sleep with power-down mode
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
 
     #include <Arduino.h>
     #include <PowerManager.h>
