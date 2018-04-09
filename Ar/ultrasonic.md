@@ -41,6 +41,7 @@
     {
         Serial.begin(9600);
         ultrasonic.init(trig, echo);
+        ultrasonic.setMeasurementUnit(MeasurementUnit::MM); // Optional: default is CM
     }
     
     void loop()
