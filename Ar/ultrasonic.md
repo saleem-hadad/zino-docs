@@ -1,32 +1,33 @@
 # <img src="https://raw.githubusercontent.com/saleem-hadad/zino/master/assets/Ultrasonic.png" alt="Zino Ultrasonic class"/> Ultrasonic
 
-- [Overview](#overview)
-    - [Theoretical information](#theoretical-information)
-    - [Technical information](#technical-information)
-- [Example](#example)
+- [نظرة عامة](#overview)
+    - [معلومات نظرية](#theoretical-information)
+    - [معلومات تقنية](#technical-information)
+- [مثال تطبيقي](#example)
 
 <a name="overview"></a>
-## Overview
+## مثال تطبيقي
 
 <a name="theoretical-information"></a>
-> {example}Theoretical Information
+> {example}معلومات نظرية
 
-Ultrasonic is an adjective referring to ultrasound.
-Ultrasound and ultrasonic may also refer to: Medical ultrasonography, an ultrasound-based diagnostic imaging technique. Ultrasound (band), a rock band.
+طريقة عمل الحساس
 
-Working principal:
-
-1. Trig send the Ping signal to the sensor so that the sensor start giving the pulse to measure the distance.
-2. Echo get the reflection of the ultrasonic wave.
-3. As long as reflection signal is High it means there is an object.
++ يرسل مخرج الـ trig ومضات لتصطدم بالأجسام المقابلة وتعود عبر مدخل الـ echo
++ يتم قياس المسافة من خلال المعادلة التالية: المسافة = السرعة ÷ الزمن
++ طالما أن حالة المدخل high فذلك يعطي إشارة بوجود جسم مقابل قريب للحساس
 
 <a name="technical-information"></a>
-> {example}Technical Information
+> {example}معلومات تقنية
 
-The Zino library encapsulates the essential methods needed to measure the distance from an ultrasonic sensor in the ```Ultrasonic``` class, all you have to do is to call the ```sense``` method which will return back the measured distance according to the subjected ```MeasurementUnit```, which is by default in cm.
+يحيط كلاس `Ultrasonic` بأغلب العمليات اللازمة لتحديد المسافة بين الحساس وبين الجسم المقابل وذلك من خلال تضمينها في فنكشن `sense` والتي تعود بالمسافة المقاسة تبعاً لوحدة القياس المحددة مسبقاً.
+
+> {tip} يوفر الكلاس أيضا إمكانية تغيير وحدة القياس إلى أي من cm, mm, m وذلك من خلال فنكشن `setMeasurementUnit`
 
 <a name="example"></a>
-## Example
+## مثال تطبيقي
+
+طباعة المسافة المقروءة من الحساس بوحدة ال cm إلى الـ Serial
 
     #include <Ultrasonic.h>
     #include <Pin.h>
