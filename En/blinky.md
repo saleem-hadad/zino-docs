@@ -13,18 +13,20 @@ The ```Blinky``` class provides an easy way for blinking(flashing) LEDs, generat
 
 Blinking an LED connected to PortB on pin 0 (same as digital pin 8) for a period of 1000ms on and 100ms off, without using the delay Arduino library's function, and without affecting other codes
 
-    #include <Arduino.h>
-    #include <Blinky.h>
-    #include <Pin.h>
-    
-    Blinky led;
-    
-    void setup()
-    {
-        led.init(Pin(PortB, 0), 1000, 100); // (pin, onTime, offTime)
-    }
-    
-    void loop()
-    {
-        led.refresh();
-    }
+```arduino
+#include <Arduino.h>
+#include <Blinky.h>
+#include <Pin.h>
+
+Blinky led;
+
+void setup()
+{
+    led.init(Pin(PortB, 0), 1000, 100); // (pin, onTime, offTime)
+}
+
+void loop()
+{
+    led.refresh();
+}
+```

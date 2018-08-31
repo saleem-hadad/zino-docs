@@ -11,22 +11,24 @@ LEDs are the fun things to play with 🤓, for that, the ```LED``` class handles
 <a name="example"></a>
 ## Example
 
-    #include <Arduino.h>
-    #include <Pin.h>
-    #include <LED.h>
-    
-    Pin ledPin(PortB, 4); // same as digital pin 12
-    LED led;
-    
-    void setup()
-    {
-        led.init(ledPin);
-    }
-    
-    void loop()
-    {
-        led.on();
-        led.off();
-        // or
-        led.toggle();
-    }
+```arduino
+#include <Arduino.h>
+#include <Pin.h>
+#include <LED.h>
+
+Pin ledPin(PortB, 4); // same as: Pin ledPin(12);
+LED led;
+
+void setup()
+{
+    led.init(ledPin);
+}
+
+void loop()
+{
+    led.on();
+    led.off();
+    // or
+    led.toggle();
+}
+```

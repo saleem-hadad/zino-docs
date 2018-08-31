@@ -17,27 +17,29 @@ Zino library provides an alternative way for using the delay function.
 <a name="example"></a>
 ## Example
 
-    #include <Arduino.h>
-    #include <Delay.h>
-    
-    Delay myDelay;
-    
-    void callback()
-    {
-        // print "Hello world 🖐" every 0.5 s
-        Serial.println("Hello world 🖐"); 
-    }
-    
-    void setup()
-    {
-        Serial.begin(9600);
-        myDelay.init(500); // duration = 500 ms. (0.5 s)
-    
-        myDelay.callback = callback; // set the callback to be notified
-    }
-    
-    void loop()
-    {
-        myDelay.refresh();
-        //Other stuff goes here
-    }
+```arduino
+#include <Arduino.h>
+#include <Delay.h>
+
+Delay myDelay;
+
+void callback()
+{
+    // print "Hello world 🖐" every 0.5 s
+    Serial.println("Hello world 🖐"); 
+}
+
+void setup()
+{
+    Serial.begin(9600);
+    myDelay.init(500); // duration = 500 ms. (0.5 s)
+
+    myDelay.callback = callback; // set the callback to be notified
+}
+
+void loop()
+{
+    myDelay.refresh();
+    //Other stuff goes here
+}
+```
